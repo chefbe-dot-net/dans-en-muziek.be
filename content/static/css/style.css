@@ -1,0 +1,6 @@
+html{width:680px;margin:10px auto;margin-top:30px;font-family:Tahoma,sans-serif;}
+.muziek{float:left;}
+.dans{float:right;}
+a,a:visited{color:#9a003d;text-decoration:none;}
+a:hover{text-decoration:underline;}
+ul{list-style:square;}

@@ -1,0 +1,28 @@
+---
+muziek:
+  name:           Class & Jazz -- Raph Van Goubergen
+  phone:          016 65 11 79 / 0486 11 95 66
+  website:        www.classandjazz.be
+  mail:           info@classandjazz.be
+  since:          2010-2012
+  adress:
+    organization: Studio Birdland Belgium 
+    street:       Langestraat 78
+    postalcode:   1910
+    locality:     Kampenhout
+    country:      Belgium
+    googlemap:    http://g.co/maps/z3nsd
+dans:
+  name:           Balletschool Attitude -- Ingrid Fonteyne
+  phone:          016 65 11 79 / 0486 11 95 66
+  website:        www.balletschoolattitude.be
+  mail:           ingrid.fonteyne@telenet.be
+  since:          2010-2012
+  adress:
+    organization: Go-Fit Healthcenter Kampenhout 
+    street:       Stationstraat 36
+    postalcode:   1910
+    locality:     Kampenhout
+    country:      Belgium
+    googlemap:    http://g.co/maps/jakkh
+
