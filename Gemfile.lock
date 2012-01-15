@@ -9,7 +9,7 @@ GIT
       wlang (~> 0.10.2)
 
 GIT
-  remote: https://github.com/eregon/epath.git
+  remote: git://github.com/eregon/epath.git
   revision: aaa41ce6cc35e0ba52815c135532844a4c6ba44c
   specs:
     epath (0.0.2)
