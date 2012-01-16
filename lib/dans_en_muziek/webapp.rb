@@ -10,7 +10,7 @@ module DansEnMuziek
     ############################################################## Normal routes
 
     get "/" do
-      content = url2content("contact").to_hash
+      content = url2content("").to_hash
       wlang :html, content
     end
 
