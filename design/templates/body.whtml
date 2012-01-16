@@ -1,9 +1,10 @@
-<div class="dans">
-  <h1>Ballet &amp; Dans</h1>
-  <<+{bricks/info.whtml with contact: info.dans}
+<div class="container">
+  <hgroup class="dans">
+    <h1>Dans</h1>
+    <<+{bricks/info.whtml with contact: info.dans}
+  </hgroup>
+  <hgroup class="muziek">
+    <h1>Muziek</h1>
+    <<+{bricks/info.whtml with contact: info.muziek}
+  </hgroup>
 </div>
-<div class="muziek">
-  <h1>Muziek</h1>
-  <<+{bricks/info.whtml with contact: info.muziek}
-</div>
-

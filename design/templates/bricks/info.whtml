@@ -1,13 +1,13 @@
-<div itemscope itemtype="http://data-vocabulary.org/Organization">
+<div class="contact" itemscope itemtype="http://data-vocabulary.org/Organization">
 
-  <h2>Contact</h2>
+  <h2>${contact.sections[0]}</h2>
   <ul>
     <li itemprop="name">${contact.name}</li>
     <li itemprop="tel">${contact.phone}</li>
     <li itemprop="url"><a href="http://${contact.website}">${contact.website}</a></li>
   </ul>
 
-  <h2>Adress</h2>
+  <h2>${contact.sections[1]}</h2>
   <ul itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
     <li>${contact.adress.organization}</li>
     <li><a href="${contact.adress.googlemap}" target="_blank">
@@ -17,7 +17,7 @@
     <li><span>${contact.adress.country}</span></li>
   </ul>
   
-  <h2>Mail</h2>
+  <h2>${contact.sections[2]}</h2>
   <ul>
     <li><a href="mailto:${contact.mail}">${contact.mail}</a></li>
   </ul>
