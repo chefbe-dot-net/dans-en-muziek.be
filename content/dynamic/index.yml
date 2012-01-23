@@ -2,10 +2,13 @@ lang:
   nl
 author: 
   Raph Van Goubergen
-title: 
+title: |-
   Dans & Muziek in Kampenhout, Vlaams Brabant
-description:
-  Dans & Muziek in Kampenhout, Vlaams Brabant
+description: |-
+  This is the description of Dans & Muziek in Kampenhout. A good description should be 4-5 lines,
+  it should include the main keywords and should match typical google searches. It should at least
+  answer the following questions: what is dans-en-muziek.be? what makes it different? who is the
+  targetted audience?
 keywords:
   [muziek lessen, balletschool, dans lessen, vlaams brabant, kampenhout, dans, jazz muziek]
 template:
@@ -44,4 +47,5 @@ info:
 text: |-
   # Hello everyone
   
-  This is the presentation text about dans-en-muziek.be. Please update.
+  This is the presentation text about dans-en-muziek.be. This text is the first chunk of text read
+  by people. It should be short enough but instructive about the goals of dans-en-muziek.be.
