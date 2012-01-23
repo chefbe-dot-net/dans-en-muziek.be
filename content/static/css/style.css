@@ -2,6 +2,9 @@ html{margin:10px auto;margin-top:30px;font-family:Tahoma,sans-serif;}
 .container{width:740px;margin:auto;}
 .muziek{float:right;}
 .dans{float:left;}
+article{clear:both;}
+h1{font-size:28px;}
+h2{font-size:22px;}
 a,a:visited{color:#9a003d;text-decoration:none;}
 a:hover{text-decoration:underline;}
 ul{list-style:square;}

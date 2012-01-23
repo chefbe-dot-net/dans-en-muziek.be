@@ -1,10 +1,15 @@
 <div class="container">
-  <hgroup class="dans">
-    <h1>Dans</h1>
-    <<+{bricks/info.whtml with contact: info.dans}
-  </hgroup>
-  <hgroup class="muziek">
-    <h1>Muziek</h1>
-    <<+{bricks/info.whtml with contact: info.muziek}
-  </hgroup>
+  <article>
+    ~{text}
+  </article>
+  <nav>
+    <hgroup class="dans">
+      <h1>Dans</h1>
+      <<+{bricks/info.whtml with contact: info.dans}
+    </hgroup>
+    <hgroup class="muziek">
+      <h1>Muziek</h1>
+      <<+{bricks/info.whtml with contact: info.muziek}
+    </hgroup>
+  </nav>
 </div>
