@@ -45,6 +45,7 @@ info:
       locality:     Kampenhout
       country:      Belgium
       googlemap:    http://g.co/maps/ayfb8
+    logo:           images/attitude.jpg
     text: |-
       **Ingrid Fonteyne** doceert ballet in haar privéschool sinds 1976.
 
@@ -65,6 +66,7 @@ info:
       locality:     Kampenhout
       country:      Belgium
       googlemap:    http://g.co/maps/z3nsd
+    logo:           images/classandjazz.jpg
     text: |-
         **Raph Van Goubergen** doceert muziek sinds 1987. 
 
