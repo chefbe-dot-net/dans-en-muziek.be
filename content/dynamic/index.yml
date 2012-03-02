@@ -2,24 +2,39 @@ lang:
   nl
 author: 
   Raph Van Goubergen
-title: |-
+title: 
   Dans & Muziek in Kampenhout, Vlaams Brabant
 description: |-
-  This is the description of Dans & Muziek in Kampenhout. A good description should be 4-5 lines,
-  it should include the main keywords and should match typical google searches. It should at least
-  answer the following questions: what is dans-en-muziek.be? what makes it different? who is the
-  targetted audience?
+  Balletschool Attitude en muziekschool Class and Jazz bieden muziekonderwijs, balletonderwijs, dansonderwijs, muziekopleiding, balletopleiding, dansopleiding balletles, dansles en muziekles aan kinderen en volwassenen in de brede regio rond Kampenhout in Vlaams Brabant.
+  Een alternatief voor dansacademie, muziekacademie, balletacademie en academie muziek ballet en dans.
+  Gebaseerd op een moderne, hedendaagse, pedagogie en methode.
 keywords:
-  [muziek lessen, balletschool, dans lessen, vlaams brabant, kampenhout, dans, jazz muziek]
+  [muzieklessen, muziekacademie, dansacademie, balletacademie, academie, muziekschool, muziek, lessen, balletschool, ballet, balletlessen, danslessen, dans, vlaams brabant, kampenhout, boortmeerbeek, haacht, herent, kortenberg, steenokkerzeel, zemst, dans, jazz, klassiek, modern, hedendaags]
 template:
   body.whtml
 google:
   tracker: UA–3061364–6
+intro: |-
+  Dans en Muziek Kampenhout verenigt de Balletschool Attitude van Ingrid Fonteyne
+  en de alternatieve muziekschool Class & Jazz van Raph Van Goubergen.
+text: |-
+  Beide pedagogen zijn grote voorstanders van de kunstvorm ter ontplooiing van de eigen persoonlijkheid. 
+  Daarom wordt in hun pedagogie de leerling gerespecteerd als individu zoals hij of zij is, met het oog op het nog te ontginnen potentieel. 
+  Iedereen is welkom, iedereen kan leren dansen, iedereen kan muziek leren spelen en iedereen wordt er ook absoluut beter van. 
+
+  **Dans en Muziek** hebben op de mens de magische uitwerking waarbij lichaam en geest worden verenigd binnen het individu. Zij bevorderen tevens de groepsgeest en het groepsgevoel.
+
+  Beide scholen hebben een stevige reputatie opgebouwd in een grote regio rond Kampenhout. 
+  Gelegen in Vlaams-Brabant, op slechts 15 à 30 minuten van Mechelen, Leuven en Brussel, zijn de scholen gemakkelijk bereikbaar 
+  van uit Mechelen, Sint-Katelijne-Waver, Bonheiden, Putte, Duffel, Heist-op-den-Berg, Zemst, Boortmeerbeek, Haacht, Keerbergen, 
+  Tremelo, Rotselaar, Begijnendijk, Aarschot, Holsbeek, Tielt-Winge, Lubbeek, Leuven, Bierbeek, Oud-Heverlee, Huldenberg, Overijse, 
+  Bertem, Herent, Tervuren, Hoeilaart, Kraainem, Wezembeek-Oppem, Zaventem, Kortenberg, Machelen, Steenokkerzeel, Vilvoorde, Brussel, 
+  Kampenhout, Grimbergen, Meise, Kappele-op-den-Bos, Wemmel.
 info:
   dans:
     sections:       [Contact, Balletstudio, Mail ballet]
     name:           Balletschool Attitude - Ingrid Fonteyne
-    phone:          016 65 11 79 / 0486 11 95 66
+    phone:          016 65 11 79 / 0486 17 02 06
     website:        www.balletschoolattitude.be
     mail:           ingrid.fonteyne@telenet.be
     since:          2010-2012
@@ -30,6 +45,12 @@ info:
       locality:     Kampenhout
       country:      Belgium
       googlemap:    http://g.co/maps/ayfb8
+    text: |-
+      **Ingrid Fonteyne** doceert ballet in haar privéschool sinds 1976.
+
+      Ze heeft reeds meer dan 35 jaar ervaring met balletopleidingen voor kinderen vanaf 4 jaar tot en met volwassenen. 
+
+      De school heeft zich gespecialiseerd in Klassiek Ballet, Jazz Ballet en Modern Ballet als onmisbare technische basis voor alle mogelijke andere dansvormen.
   muziek:
     sections:       [Contact, Muziekstudio, Mail muziek]
     name:           Class & Jazz - Raph Van Goubergen
@@ -44,8 +65,13 @@ info:
       locality:     Kampenhout
       country:      Belgium
       googlemap:    http://g.co/maps/z3nsd
-text: |-
-  # Hello everyone
-  
-  This is the presentation text about dans-en-muziek.be. This text is the first chunk of text read
-  by people. It should be short enough but instructive about the goals of dans-en-muziek.be.
+    text: |-
+        **Raph Van Goubergen** doceert muziek sinds 1987. 
+
+        Aanvankelijk deed hij dit in de Gemeentelijke Muziekschool van Kampenhout, waar hij ook pedagogisch, artistiek en administratieve verantwoordelijke was.
+
+        In 2009 richtte hij CLASS & JAZZ op, een nieuw muzikaal pedagogisch project dat streeft naar een kwalitatief alternatief voor muziekopleidingen (alle instrumenten). 
+
+        De pedagogie combineert de Klassieke methode (CLASS) en de Jazz methode (& JAZZ) omdat beiden in de huidige cultuur elkaar aanvullen 
+        en onmisbaar zijn geworden om op een bevredigende, vrije en leuke manier aan muziek te kunnen doen. 
+

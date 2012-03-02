@@ -1,22 +1,43 @@
 @pink: #9A003D;
+@width: 740px;
 
 html {
   margin: 10px auto; 
   margin-top: 30px;
   font-family: Tahoma, sans-serif; }
+
+header {
+  h1 {
+    font-size: 48px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px; }
+}
+
 .container {
-  width: 740px;
-  margin: auto; }
+  clear: both;
+  width: @width;
+  margin: auto; 
+  padding-top: 5px;
+  p { text-align: justify; } 
+}
+.column {
+  width: @width/2 - 20px;
+  img {
+    display: block;
+    width: 300px;
+    margin: auto; }
+  h1 {
+    font-size: 18px; }
+  p {
+    padding: 0px; 
+    margin: 0px;
+    margin-top: 15px; }
+}
 .muziek {
   float: right }
 .dans {
-  float: left }
-article {
-  clear: both; }
-h1 {
-  font-size: 28px; }
-h2 {
-  font-size: 22px; }
+  float: left  }
 
 a, a:visited {
   color: @pink; 
@@ -26,4 +47,4 @@ a:hover {
 ul {
   list-style: square; }
 .contact {
-  padding-left: 35px; }
+  padding-left: 0px; }

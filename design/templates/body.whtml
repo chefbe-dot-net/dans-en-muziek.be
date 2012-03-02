@@ -1,15 +1,24 @@
+<header class="container">
+  <h1>DANS en MUZIEK</h1>
+  <div class="column dans">
+    <img src="images/attitude.jpg" alt="dans logo"/>
+  </div>
+  <div class="column muziek">
+    <img src="images/classandjazz.jpg" alt="muziek logo"/>
+  </div>
+</header>
 <div class="container">
-  <article>
-    ~{text}
-  </article>
-  <nav>
-    <hgroup class="dans">
-      <h1>Dans</h1>
-      <<+{bricks/info.whtml with contact: info.dans}
-    </hgroup>
-    <hgroup class="muziek">
-      <h1>Muziek</h1>
-      <<+{bricks/info.whtml with contact: info.muziek}
-    </hgroup>
-  </nav>
+  ~{intro}
 </div>
+<div class="container">
+  <hgroup class="column dans">
+    <<+{bricks/info.whtml with contact: info.dans}
+  </hgroup>
+  <hgroup class="column muziek">
+    <<+{bricks/info.whtml with contact: info.muziek}
+  </hgroup>
+</div>
+<div class="container">
+  ~{text}
+</div>
+
