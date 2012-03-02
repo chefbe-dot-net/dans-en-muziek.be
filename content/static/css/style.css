@@ -1,14 +1,12 @@
-html{margin:10px auto;margin-top:30px;font-family:Tahoma,sans-serif;}
-header h1{font-size:48px;text-align:center;padding:0px;margin:0px;}
+html{margin:0px auto;font-family:Tahoma,sans-serif;color:#222222;background-color:white;}
+body{width:760px;padding:10px;margin:auto;background-color:#CCCCCC;border:2px solid #222222;}
+header h1{font-size:48px;text-align:center;padding:0px;margin:10px 0px;}
 .container{clear:both;width:740px;margin:auto;padding-top:5px;}.container p{text-align:justify;}
-.column{width:350px;}.column img{display:block;width:300px;margin:auto;}
+.column{width:350px;}.column img{display:block;width:300px;margin:auto;border:none;}
 .column h1{font-size:18px;}
 .column p{padding:0px;margin:0px;margin-top:15px;}
 .muziek{float:right;}
 .dans{float:left;}
-article{clear:both;}
-h1{font-size:28px;}
-h2{font-size:22px;}
 a,a:visited{color:#9a003d;text-decoration:none;}
 a:hover{text-decoration:underline;}
 ul{list-style:square;}
