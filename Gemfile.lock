@@ -1,25 +1,20 @@
-GIT
-  remote: git://github.com/blambeau/polygon.git
-  revision: 68b979da3cd91599df4b609ab3c9b8bac6808fe5
-  specs:
-    polygon (0.0.1)
-      epath (~> 0.2.0)
-      json
-      sinatra (~> 1.3.1)
-      wlang (~> 0.10.2)
-
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.2.6)
-    daemons (1.1.5)
+    addressable (2.2.8)
+    daemons (1.1.8)
     epath (0.2.0)
     eventmachine (1.0.0.beta.4)
     http (0.0.2)
     json (1.7.3)
     launchy (2.0.5)
       addressable (~> 2.2.6)
-    quickl (0.4.2)
+    polygon (0.0.1)
+      epath (~> 0.2.0)
+      json
+      sinatra (~> 1.3)
+      wlang (~> 0.10.2)
+    quickl (0.4.3)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
@@ -47,7 +42,7 @@ DEPENDENCIES
   http (~> 0.0.1)
   json
   launchy (~> 2.0.5)
-  polygon!
+  polygon (~> 0.0.1)
   quickl (~> 0.4.2)
   rack-test (~> 0.6.1)
   rake (~> 0.9.2)
