@@ -15,5 +15,3 @@ Dir.chdir(root = File.expand_path('../../',__FILE__)) do
   use Rack::CommonLogger
   run DansEnMuziek::WebApp
 end
-
-
