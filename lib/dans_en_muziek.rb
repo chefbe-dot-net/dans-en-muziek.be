@@ -1,12 +1,11 @@
-require 'ext/hash'
-require 'ext/wlang'
 require 'ext/nocache'
 require 'redcarpet'
 require 'polygon'
+require 'wlang/tilt'
 
 module DansEnMuziek
 end
 
 require 'dans_en_muziek/helpers'
+require 'dans_en_muziek/dialect'
 require 'dans_en_muziek/webapp'
-

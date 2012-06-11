@@ -12,21 +12,9 @@ task :development do
   exec "ruby scripts/launch.rb development"
 end
 
-namespace :test do
-
-  desc %q{Test content}
-  task :content do
-    system "bundle exec ruby -Ilib -Itest test/content/runall.rb"
-    $?
-  end
-
-  desc %q{Test services}
-  task :service do
-    system "bundle exec ruby -Ilib -Itest test/service/runall.rb"
-    $?
-  end
-
-  task :all => [:content, :service]
+desc %q{Run all RSpec tests}
+task :spec do
+  require 'rspec'
+  exit RSpec::Core::Runner.run(%w[-Ilib -Ispec --pattern=spec/**/test_*.rb --color .])
 end
-
-task :default => "test:all".to_sym
+task :default => :spec

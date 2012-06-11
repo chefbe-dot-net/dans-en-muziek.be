@@ -1,0 +1,22 @@
+<div class="contact" itemscope itemtype="http://data-vocabulary.org/Organization">
+  <h1>${sections.first}</h1>
+  <ul>
+    <li itemprop="name">${name}</li>
+    <li itemprop="tel">${phone}</li>
+    <li itemprop="url"><a href="http://${website}">${website}</a></li>
+  </ul>
+  <h1>${sections.second}</h1>
+  <ul itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+    <li>${adress.organization}</li>
+    <li><a href="${adress.googlemap}" target="_blank">
+      <span>${adress.street}</span>
+      <span>${adress.postalcode}</span>
+      <span>${adress.locality}</span></a></li>
+    <li><span>${adress.country}</span></li>
+  </ul>
+  <h1>${sections.third}</h1>
+  <ul>
+    <li><a href="mailto:${mail}">${mail}</a></li>
+  </ul>
+  ~{text}
+</div>

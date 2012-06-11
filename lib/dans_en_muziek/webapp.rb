@@ -5,13 +5,14 @@ module DansEnMuziek
     ############################################################## Configuration
     configure do
       set :root, Path.backfind('.[config.ru]')
+      set :wlang, :views_path => views
     end
 
     ############################################################## Normal routes
 
     get "/" do
-      content = url2content("").to_hash
-      wlang :html, content
+      content = file2content(path2file(""))
+      wlang :body, :locals => content, :layout => :html
     end
 
     ############################################################## Error handling

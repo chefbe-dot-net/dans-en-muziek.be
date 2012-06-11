@@ -32,7 +32,7 @@ text: |-
   Kampenhout, Grimbergen, Meise, Kappele-op-den-Bos, Wemmel.
 info:
   dans:
-    sections:       [Contact, Balletstudio, Mail ballet]
+    sections:       {first: Contact, second: Balletstudio, third: Mail ballet}
     name:           Balletschool Attitude - Ingrid Fonteyne
     phone:          016 65 11 79 / 0486 17 02 06
     website:        www.balletschoolattitude.be
@@ -53,7 +53,7 @@ info:
 
       De school heeft zich gespecialiseerd in Klassiek Ballet, Jazz Ballet en Modern Ballet als onmisbare technische basis voor alle mogelijke andere dansvormen.
   muziek:
-    sections:       [Contact, Muziekstudio, Mail muziek]
+    sections:       {first: Contact, second: Muziekstudio, third: Mail muziek}
     name:           Class & Jazz - Raph Van Goubergen
     phone:          016 65 11 79 / 0486 11 95 66
     website:        www.classandjazz.be

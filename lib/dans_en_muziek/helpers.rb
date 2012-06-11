@@ -11,34 +11,36 @@ module DansEnMuziek
       Polygon::Content.new(dynamic, content_loader)
     end
 
-    def path2content(path)
-      path && root_content.entry(path)
+    # Converts a path to a file in dynamic content
+    def path2file(path)
+      path == "" ? dynamic/"index.yml" : nil
     end
 
-    def url2path(url)
-      content_loader.extensions.each do |ext| 
-        file = dynamic/"#{url}#{ext}"
-        return file if file.file?
-      end
-      content_loader.extensions.each do |ext|
-        file = dynamic/url/"index#{ext}"
-        return file if file.file?
-      end
-      nil
+    # Convert a file from dynamic content to a path
+    def file2path(file)
+      path = (file % dynamic).rm_ext
+      path = path.basename.to_s == "index" ? path.parent : path
+      path == Path('.') ? Path("") : path
     end
 
-    def url2content(url)
-      path2content(url2path(url))
+    # Returns the content for a given file
+    def file2content(file)
+      h           = root_content.entry(file).to_hash
+      h[:path]    = file2path(file)
+      h[:lastmod] = file.mtime.strftime("%Y-%m-%d")
+      h
     end
 
+    # Returns true if we are in production, false otherwise
+    def in_production
+      settings.environment == :production
+    end
+
+    # Returns the list of writings
     def writings
-      dynamic.glob("**/*.md").map{|file|
-        path2content(file).to_hash
-      }.sort{|h1,h2| h1["date"] <=> h2["date"]}
-    end
-
-    def default_wlang_context
-      super.merge("writings" => writings)
+      dynamic.glob("**/*.yml").
+               map{ |file|  file2content(file) }.
+              sort{ |h1,h2| h1["date"] <=> h2["date"] }
     end
 
   end # module Helpers

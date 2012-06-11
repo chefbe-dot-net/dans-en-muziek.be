@@ -12,13 +12,12 @@
 </div>
 <div class="container">
   <hgroup class="column dans">
-    <<+{bricks/info.whtml with contact: info.dans}
+    #{info.dans}{>>{contact.wlang}}
   </hgroup>
   <hgroup class="column muziek">
-    <<+{bricks/info.whtml with contact: info.muziek}
+    #{info.muziek}{>>{contact.wlang}}
   </hgroup>
 </div>
 <div class="container">
   ~{text}
 </div>
-
