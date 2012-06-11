@@ -3,7 +3,7 @@ source :rubygems
 gem "sinatra", "~> 1.3.0"
 gem "wlang", "~> 0.10.2"
 gem "redcarpet", "~> 2.0.1"  
-gem "epath", :git => "git://github.com/eregon/epath.git"
+gem "epath", "~> 0.2.0"
 gem "polygon", :git => "git://github.com/blambeau/polygon.git"
 
 group :development do

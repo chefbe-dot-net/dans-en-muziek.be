@@ -1,31 +1,26 @@
 GIT
   remote: git://github.com/blambeau/polygon.git
-  revision: 2e2d8303eafea4bb0657a8e9103aca25a49bf87a
+  revision: 68b979da3cd91599df4b609ab3c9b8bac6808fe5
   specs:
     polygon (0.0.1)
-      epath (~> 0.0.1)
+      epath (~> 0.2.0)
       json
       sinatra (~> 1.3.1)
       wlang (~> 0.10.2)
-
-GIT
-  remote: git://github.com/eregon/epath.git
-  revision: aaa41ce6cc35e0ba52815c135532844a4c6ba44c
-  specs:
-    epath (0.0.2)
 
 GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.6)
     daemons (1.1.5)
+    epath (0.2.0)
     eventmachine (1.0.0.beta.4)
     http (0.0.2)
-    json (1.6.5)
+    json (1.7.3)
     launchy (2.0.5)
       addressable (~> 2.2.6)
     quickl (0.4.2)
-    rack (1.4.0)
+    rack (1.4.1)
     rack-protection (1.2.0)
       rack
     rack-test (0.6.1)
@@ -47,7 +42,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  epath!
+  epath (~> 0.2.0)
   eventmachine (~> 1.0.0.beta.4)
   http (~> 0.0.1)
   json
