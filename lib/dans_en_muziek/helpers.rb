@@ -1,16 +1,6 @@
 module DansEnMuziek
   module Helpers
 
-    def content_loader
-      Polygon::ContentLoader.new.
-        enable_yaml_front_matter!(".md").
-        enable_yaml!(".yml")
-    end
-
-    def root_content
-      Polygon::Content.new(dynamic, content_loader)
-    end
-
     # Converts a path to a file in dynamic content
     def path2file(path)
       path == "" ? dynamic/"index.yml" : nil
@@ -23,28 +13,27 @@ module DansEnMuziek
       path == Path('.') ? Path("") : path
     end
 
-    # Returns the content for a given file
-    def file2content(file)
-      h           = root_content.entry(file).to_hash
-      h[:path]    = file2path(file)
-      h[:lastmod] = file.mtime.strftime("%Y-%m-%d")
-      h
+    def sitemap
+      file2path = lambda{|f| file2path(f) }
+      lispy do
+        (extend :entries,
+                :path    => proc{ file2path.call(entry.path)            },
+                :lastmod => proc{ entry.path.mtime.strftime("%Y-%m-%d") })
+      end
     end
 
-    def content_for(path)
-      file2content path2file(path)
+    def sitemap_locals
+      { :urls => sitemap }
     end
 
-    # Returns true if we are in production, false otherwise
-    def in_production
-      settings.environment == :production
-    end
-
-    # Returns the list of writings
-    def writings
-      dynamic.glob("**/*.yml").
-               map{ |file|  file2content(file) }.
-              sort{ |h1,h2| h1["date"] <=> h2["date"] }
+    def index_locals
+      sitemap = self.sitemap
+      lispy do
+        (unwrap \
+          (extend (restrict sitemap, :path => Path("")),
+                  :data => lambda{ entry.to_hash }),
+          :data)
+      end.to_a.first
     end
 
   end # module Helpers

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  *{writings}{
+  *{urls}{
   <url>
     <loc>http://www.dans-en-muziek.be/${path}</loc>
     <lastmod>${lastmod}</lastmod>

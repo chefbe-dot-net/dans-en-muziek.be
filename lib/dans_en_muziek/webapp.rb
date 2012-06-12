@@ -10,8 +10,13 @@ module DansEnMuziek
 
     ############################################################## Normal routes
 
+    get '/sitemap.xml' do
+      content_type "application/xml"
+      wlang :sitemap, :locals => sitemap_locals, :layout => false
+    end
+
     get "/" do
-      wlang :index, :locals => content_for("")
+      wlang :index, :locals => index_locals
     end
 
     ############################################################## Error handling
