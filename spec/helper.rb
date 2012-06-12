@@ -3,12 +3,12 @@ require 'rspec'
 require 'rack/test'
 ENV['RACK_ENV'] = 'test'
 
-require 'dans_en_muziek'
+require 'app'
 
 RSpec.configure do |c|
 
   def app
-    DansEnMuziek::WebApp
+    App
   end
 
   def internal?(link)

@@ -9,8 +9,8 @@ Bundler.setup(:production)
 Dir.chdir(root = File.expand_path('../../',__FILE__)) do
   # update loadpath and load project
   $: << File.join(root,"lib")
-  require 'dans_en_muziek'
+  require 'app'
   
-  run DansEnMuziek::WebApp
+  run App
 end
 
