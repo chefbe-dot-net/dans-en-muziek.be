@@ -31,6 +31,10 @@ module DansEnMuziek
       h
     end
 
+    def content_for(path)
+      file2content path2file(path)
+    end
+
     # Returns true if we are in production, false otherwise
     def in_production
       settings.environment == :production

@@ -12,10 +12,10 @@
 </div>
 <div class="container">
   <hgroup class="column dans">
-    #{info.dans}{>>{contact.wlang}}
+    #{info.dans}{>>{partials/contact.wlang}}
   </hgroup>
   <hgroup class="column muziek">
-    #{info.muziek}{>>{contact.wlang}}
+    #{info.muziek}{>>{partials/contact.wlang}}
   </hgroup>
 </div>
 <div class="container">
