@@ -1,8 +1,12 @@
 class Dialect < WLang::Html
 
+  def app
+    value_of('app')
+  end
+
   def tilde(buf, fn)
     text = value_of(fn)
-    buf << markdown(text)
+    buf << app.markdown(text)
   end
 
   def append(buf, fn)
@@ -17,11 +21,6 @@ class Dialect < WLang::Html
 
     def resolve_relative_path(path)
       Path(template.path).parent / path
-    end
-
-    def markdown(text)
-      @markdown ||= Redcarpet::Markdown.new(Redcarpet::Render::HTML)
-      @markdown.render(text)
     end
 
   Tilt.prefer Tilt::WLangTemplate.with_options(:dialect => Dialect), 'wlang'

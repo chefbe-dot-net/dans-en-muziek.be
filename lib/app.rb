@@ -1,4 +1,3 @@
-require 'redcarpet'
 require 'polygon'
 require 'helpers'
 require 'dialect'
@@ -12,7 +11,7 @@ class App < Polygon::Base
   end
 
   get "/" do
-    wlang :index, :locals => index_locals
+    wlang :index, :locals => index_locals.merge(:app => self)
   end
 
   # error handling
