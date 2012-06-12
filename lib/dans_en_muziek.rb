@@ -1,4 +1,3 @@
-require 'ext/nocache'
 require 'redcarpet'
 require 'polygon'
 require 'wlang'
