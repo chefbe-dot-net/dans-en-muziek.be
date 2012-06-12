@@ -5,7 +5,6 @@ module DansEnMuziek
     ############################################################## Configuration
     configure do
       set :root, Path.backfind('.[config.ru]')
-      set :wlang, :views_path => views
     end
 
     ############################################################## Normal routes

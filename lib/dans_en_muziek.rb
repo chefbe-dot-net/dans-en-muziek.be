@@ -1,7 +1,7 @@
 require 'ext/nocache'
 require 'redcarpet'
 require 'polygon'
-require 'wlang/tilt'
+require 'wlang'
 
 module DansEnMuziek
 end

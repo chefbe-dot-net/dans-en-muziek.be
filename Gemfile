@@ -1,10 +1,8 @@
 source :rubygems
 
 gem "redcarpet", "~> 2.0.1"  
-gem "epath",     "~> 0.2.0"
-gem "sinatra",   :path => "../../sinatra"
-gem "polygon",   :path => "../../polygon"
-gem "wlang",     :path => "../../wlang"
+gem "polygon", :path => "../../polygon"
+gem "sinatra", :git => "git://github.com/sinatra/sinatra"
 
 group :development do
   gem "eventmachine", "~> 1.0.0.beta.4"

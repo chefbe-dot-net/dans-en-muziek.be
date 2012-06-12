@@ -17,7 +17,7 @@ module DansEnMuziek
   private
 
     def resolve_relative_path(path)
-      options[:views_path] / path
+      Path(template.path).parent / path
     end
 
     def markdown(text)
