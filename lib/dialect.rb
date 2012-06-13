@@ -5,18 +5,20 @@ class Dialect < WLang::Html
     buf << context.markdown(text)
   end
 
-  def append(buf, fn)
-    path = resolve_relative_path(render(fn))
-    buf << Tilt.new(path.to_s).render(scope)
+  def greater(buf, fn)
+    super
+  rescue NameError
+    path = partial_path(render(fn))
+    buf << context.wlang(path.to_sym, :locals => scope.subject, :layout => false)
   end
 
-  tag '~',  :tilde
-  tag '>>', :append
+  tag '~', :tilde
+  tag '>', :greater
 
   private
 
-    def resolve_relative_path(path)
-      Path(template.path).parent / path
+    def partial_path(path)
+      (Path(template.path).parent / path) % Path(context.settings.views)
     end
 
   Tilt.prefer Tilt::WLangTemplate.with_options(:dialect => Dialect), 'wlang'

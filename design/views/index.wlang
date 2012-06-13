@@ -19,7 +19,7 @@ partials:
 <div class="container">
   *{sections}{
     <hgroup class="column ${key}">
-      >>{partials/contact.wlang}
+      >{partials/contact}
     </hgroup>
   }
 </div>
