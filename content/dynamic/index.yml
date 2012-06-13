@@ -28,8 +28,8 @@ text: |-
   Tremelo, Rotselaar, Begijnendijk, Aarschot, Holsbeek, Tielt-Winge, Lubbeek, Leuven, Bierbeek, Oud-Heverlee, Huldenberg, Overijse, 
   Bertem, Herent, Tervuren, Hoeilaart, Kraainem, Wezembeek-Oppem, Zaventem, Kortenberg, Machelen, Steenokkerzeel, Vilvoorde, Brussel, 
   Kampenhout, Grimbergen, Meise, Kappele-op-den-Bos, Wemmel.
-info:
-  dans:
+sections:
+  - key:            dans
     sections:       {first: Contact, second: Balletstudio, third: Mail ballet}
     name:           Balletschool Attitude - Ingrid Fonteyne
     phone:          016 65 11 79 / 0486 17 02 06
@@ -50,7 +50,7 @@ info:
       Ze heeft reeds meer dan 35 jaar ervaring met balletopleidingen voor kinderen vanaf 4 jaar tot en met volwassenen. 
 
       De school heeft zich gespecialiseerd in Klassiek Ballet, Jazz Ballet en Modern Ballet als onmisbare technische basis voor alle mogelijke andere dansvormen.
-  muziek:
+  - key:            muziek
     sections:       {first: Contact, second: Muziekstudio, third: Mail muziek}
     name:           Class & Jazz - Raph Van Goubergen
     phone:          016 65 11 79 / 0486 11 95 66
@@ -73,5 +73,4 @@ info:
         In 2009 richtte hij CLASS & JAZZ op, een nieuw muzikaal pedagogisch project dat streeft naar een kwalitatief alternatief voor muziekopleidingen (alle instrumenten). 
 
         De pedagogie combineert de Klassieke methode (CLASS) en de Jazz methode (& JAZZ) omdat beiden in de huidige cultuur elkaar aanvullen 
-        en onmisbaar zijn geworden om op een bevredigende, vrije en leuke manier aan muziek te kunnen doen. 
-
+        en onmisbaar zijn geworden om op een bevredigende, vrije en leuke manier aan muziek te kunnen doen.

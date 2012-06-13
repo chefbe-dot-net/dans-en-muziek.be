@@ -1,23 +1,29 @@
+---
+partials:
+  column: |-
+    <div class="column ${key}">
+      <a target="_blank" href="http://${website}"><img src="${logo}" alt="dans logo"/></a>
+    </div>
+---
 <header class="container">
-  <h1>DANS en MUZIEK</h1>
-  <div class="column dans">
-    <a target="_blank" href="http://${info.dans.website}"><img src="${info.dans.logo}" alt="dans logo"/></a>
-  </div>
-  <div class="column muziek">
-    <a target="_blank" href="http://${info.muziek.website}"><img src="${info.muziek.logo}" alt="muziek logo"/></a>
-  </div>
+  <h1>*{sections}{${key.upcase}}{ en }</h1>
+  *{sections}{
+    >{column}
+  }
 </header>
+
 <div class="container">
   ~{intro}
 </div>
+
 <div class="container">
-  <hgroup class="column dans">
-    #{info.dans}{>>{partials/contact.wlang}}
-  </hgroup>
-  <hgroup class="column muziek">
-    #{info.muziek}{>>{partials/contact.wlang}}
-  </hgroup>
+  *{sections}{
+    <hgroup class="column ${key}">
+      >>{partials/contact.wlang}
+    </hgroup>
+  }
 </div>
+
 <div class="container">
   ~{text}
 </div>
