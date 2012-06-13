@@ -1,12 +1,8 @@
 class Dialect < WLang::Html
 
-  def app
-    value_of('app')
-  end
-
   def tilde(buf, fn)
     text = value_of(fn)
-    buf << app.markdown(text)
+    buf << context.markdown(text)
   end
 
   def append(buf, fn)

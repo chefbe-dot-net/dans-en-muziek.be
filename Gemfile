@@ -3,6 +3,7 @@ source :rubygems
 gem "redcarpet", "~> 2.0.1"  
 gem "polygon", :path => "../../polygon"
 gem "sinatra", :git => "git://github.com/sinatra/sinatra"
+gem 'wlang',   :path => "../../wlang"
 
 group :development do
   gem "eventmachine", "~> 1.0.0.beta.4"
