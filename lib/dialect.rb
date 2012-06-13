@@ -1,7 +1,7 @@
 class Dialect < WLang::Html
 
   def tilde(buf, fn)
-    text = value_of(fn)
+    text = evaluate(fn)
     buf << context.markdown(text)
   end
 
