@@ -6,7 +6,7 @@ describe "stylesheet tags at /" do
   end
 
   it 'refer to accessible stylesheets' do
-    body.scan %r{<link.*?href="(.*?)"} do |match|
+    body.scan %r{<link\s+rel="stylesheet".*?href="(.*?)"} do |match|
       head (css = match.first)
       next unless internal?(css)
       status.should == 200

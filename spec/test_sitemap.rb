@@ -15,7 +15,7 @@ describe "/sitemap.xml" do
   end
 
   it 'contains valid urls only' do
-    body.scan %r{<loc>http://www.dans-en-muziek.be/(.*)</loc>} do |match|
+    body.scan %r{<loc>http://[^\/]+/(.*)</loc>} do |match|
       head "/#{match.first}"
       status.should == 200
     end

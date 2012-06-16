@@ -4,9 +4,12 @@ header h1{font-size:48px;text-align:center;padding:0px;margin:10px 0px;}
 .container{clear:both;width:740px;margin:auto;padding-top:5px;}.container p{text-align:justify;}
 .column{width:350px;}.column img{display:block;width:300px;margin:auto;border:none;}
 .column h1{font-size:18px;}
-.column p{padding:0px;margin:0px;margin-top:15px;}
+.column ul{margin-top:7px;margin-bottom:15px;}
+.column p{padding:0px;margin:10px 0px;margin-top:15px;}
+.column div.abstract{margin-top:30px;}
 .muziek{float:right;}
 .dans{float:left;}
+p,ul li{font-size:16px;}
 a,a:visited{color:#9a003d;text-decoration:none;}
 a:hover{text-decoration:underline;}
 ul{list-style:square;}

@@ -1,0 +1,24 @@
+template-info:
+  name: "polygon.noe"
+  version: 0.1.0
+  manifest:
+    content/dynamic/index.md:
+      ignore: true
+variables:
+  url: www.dans-en-muziek.be
+  title: Dans & Muziek in Kampenhout, Vlaams Brabant
+  team:
+    - title:    Owner, Class & Jazz
+      name:     Raphael Van Goubergen
+      site:     www.classandjazz.be
+      location: Kampenhout, Belgium
+    - title:    Owner, Balletschool Attitude
+      name:     Ingrid Fonteyne
+      site:     www.balletschoolattitude.be
+      location: Kampenhout, Belgium
+    - title:    Developer
+      name:     Bernard Lambeau
+      site:     blambeau at gmail
+      twitter:  blambeau
+      location: Namur, Belgium
+

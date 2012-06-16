@@ -1,8 +1,8 @@
 require 'helper'
-describe "/robots.txt" do
+describe "/humans.txt" do
 
   before do
-    get '/robots.txt'
+    get '/humans.txt'
   end
 
   it 'responds' do

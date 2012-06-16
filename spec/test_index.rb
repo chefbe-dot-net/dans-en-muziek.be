@@ -5,9 +5,12 @@ describe "/" do
     get '/'
   end
 
-  it 'contains markdown generated content' do
+  it 'responds' do
     status.should == 200
-    body.should =~ %r{<p>Dans en Muziek Kampenhout verenigt}
+  end
+
+  it 'contains the expected title' do
+    body.should =~ %r{<title>Dans &amp; Muziek in Kampenhout, Vlaams Brabant</title>}
   end
 
 end

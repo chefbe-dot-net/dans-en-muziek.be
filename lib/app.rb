@@ -11,12 +11,7 @@ class App < Polygon::Base
   end
 
   get "/" do
-    wlang :index, :locals => index_locals.merge(:app => self)
-  end
-
-  # error handling
-  error do
-    'Sorry, an error occurred'
+    wlang :index, :locals => index_locals
   end
 
 end

@@ -29,4 +29,4 @@ module Helpers
     end.to_a.first
   end
 
-end # module Helpers
+end

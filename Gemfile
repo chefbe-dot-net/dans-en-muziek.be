@@ -1,9 +1,9 @@
 source :rubygems
 
 gem "redcarpet", "~> 2.0.1"  
-gem "polygon", :path => "../../polygon"
-gem "sinatra", :git => "git://github.com/sinatra/sinatra"
-gem 'wlang',   :path => "../../wlang"
+gem "polygon", :git => "git://github.com/blambeau/polygon"
+gem "sinatra", :git => "git://github.com/blambeau/sinatra"
+gem 'wlang',   :git => "git://github.com/blambeau/wlang", :branch => :wlang2
 
 group :development do
   gem "eventmachine", "~> 1.0.0.beta.4"

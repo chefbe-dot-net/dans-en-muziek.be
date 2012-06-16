@@ -18,5 +18,7 @@
   <ul>
     <li><a href="mailto:${mail}">${mail}</a></li>
   </ul>
-  ~{text}
+  <div class="abstract">
+    ~{text}
+  </div>
 </div>
