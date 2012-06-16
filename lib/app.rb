@@ -1,6 +1,5 @@
 require 'polygon'
 require 'helpers'
-require 'dialect'
 
 class App < Polygon::Base
   helpers Helpers

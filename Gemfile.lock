@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/blambeau/polygon
-  revision: c3931c1959c66f331bedcb261456e4a1d26eec00
+  revision: 4f3944823cf4bacc6c6b3c99c5319111bfa34e64
   specs:
     polygon (0.1.0)
       alf (~> 0.12.2)
