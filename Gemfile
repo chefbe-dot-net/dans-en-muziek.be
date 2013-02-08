@@ -1,9 +1,10 @@
 source :rubygems
 
 gem "redcarpet", "~> 2.0.1"  
-gem "polygon", :git => "git://github.com/blambeau/polygon"
-gem "sinatra", :git => "git://github.com/blambeau/sinatra"
-gem 'wlang',   :git => "git://github.com/blambeau/wlang", :branch => :wlang2
+gem "alf-core", :git => "git://github.com/alf-tool/alf-core"
+gem "polygon",  :git => "git://github.com/blambeau/polygon"
+gem "sinatra",  :git => "git://github.com/blambeau/sinatra"
+gem 'wlang',    :git => "git://github.com/blambeau/wlang", :branch => :wlang2
 
 group :development do
   gem "eventmachine", "~> 1.0.0.beta.4"
@@ -16,4 +17,3 @@ group :development do
   gem "quickl",       "~> 0.4.2"
   gem "json",         ">= 0"
 end
-
