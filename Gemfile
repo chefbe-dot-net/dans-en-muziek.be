@@ -1,10 +1,10 @@
-source :rubygems
+source "http://rubygems.org"
 
-gem "redcarpet", "~> 2.0.1"  
-gem "alf-core", :git => "git://github.com/alf-tool/alf-core"
+gem "redcarpet", "~> 2.0"
+gem "alf-core", "~> 0.16.3"
 gem "polygon",  :git => "git://github.com/blambeau/polygon"
-gem "sinatra",  :git => "git://github.com/blambeau/sinatra"
-gem 'wlang',    :git => "git://github.com/blambeau/wlang", :branch => :wlang2
+gem "sinatra",  "~> 1.4"
+gem 'wlang',    "~> 2.3"
 
 gem "thin", "~> 1.3"
 
