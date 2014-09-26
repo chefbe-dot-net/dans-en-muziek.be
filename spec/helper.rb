@@ -11,6 +11,10 @@ RSpec.configure do |c|
     App
   end
 
+  def database
+    Polygon.connection(app.doc_folder)
+  end
+
   def internal?(link)
     link && !(link =~ /^(https?|ftp|mailto):/) && !(link =~ /ajax.googleapis.com/)
   end

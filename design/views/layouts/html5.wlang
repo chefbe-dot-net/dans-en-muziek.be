@@ -14,16 +14,11 @@
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/css/bootstrap-responsive.min.css" />
+  
   <link rel="stylesheet" href="/css/style.css">
   <link rel="author" href="humans.txt" />
 
-  <script src="/js/libs/modernizr.min.js"></script>
-</head>
-<body>
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-
-+{yield}
+  <!--[if lt IE 9]><script src="/js/libs/html5.min.js"></script><![endif]-->
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/js/libs/jquery.min.js"><\/script>')</script>
@@ -31,7 +26,10 @@
 
   <script src="/js/plugins.js"></script>
   <script src="/js/script.js"></script>
-
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+>{layouts/common}
   ?{in_production}{#{google.tracker}{
   <script>
     var _gaq=[['_setAccount','${self}'],['_trackPageview']];
