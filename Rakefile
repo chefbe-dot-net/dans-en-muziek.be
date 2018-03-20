@@ -21,10 +21,4 @@ task :spec do
   exit RSpec::Core::Runner.run(%w[-Ilib -Ispec --pattern=spec/**/test_*.rb --color .])
 end
 
-desc %q{Build docker image and push it to q8s}
-task :q8sbuild do
-  exec "docker build -t chefbe/dans-en-muziek . && \
-        docker push chefbe/dans-en-muziek"
-end
-
 task :default => :spec
